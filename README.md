@@ -1,2 +1,2 @@
 # AngularJS
-Repository for angularJS projects
+App that consume JSON service to make a tv calendar 

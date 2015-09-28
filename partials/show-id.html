@@ -1,0 +1,37 @@
+<div class="content">
+	<div class="mainDetails">
+		<div class="image">
+			<img ng-src="{{showDetail.image.medium}}" alt="{{showDetail.name}}"/>
+		</div>
+		<div class="infoDetail">
+			<div class="titleDetail">
+				<span>{{showDetail.name}}</span>
+				<span class="statusDetail">{{showDetail.status}}</span>
+			</div>
+			<div class="subTitleDetail">
+				<span>{{showDetail.language}} |</span>
+				<span>{{showDetail.runtime}} min |</span>
+				<span ng-repeat="data in showDetail">
+					<span>{{data.genres}}</span>
+				</span>
+				<span>Rating: {{showDetail.rating.average}}</span>
+			</div>
+			<div ng-bind-html="showDetail.summary | to_trusted" class="summaryDetail">
+			</div>
+		</div>
+	</div>
+	<div class="nextEpisode">
+		<span>
+			<i class="fa fa-tv"></i>
+		</span>
+		<div class="nextEpisode--title">
+			{{nextepisode.name}}
+		</div>
+		<div class="nextEpisode--episode">
+			Season {{nextepisode.season}} Episode {{nextepisode.number}}
+		</div>
+		<div class="nextEpisode--date">
+			{{nextepisode.airdate}} {{nextepisode.airtime}}
+		</div>
+	</div>
+</div>

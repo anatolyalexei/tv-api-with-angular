@@ -1,0 +1,15 @@
+<div class="row" class="content">
+	<span class="col-sm-4" ng-repeat="data in today">
+		<div class="image-content">
+			<img ng-src="{{data.show.image.medium}}" />
+			<div class="info-content">
+				<div class="nameSow">
+					{{data.show.name}}
+				</div>
+				<div class="episode">
+					{{data.season}}x{{data.number}}
+				</div>
+			</div>
+		</div>
+	</span>
+</div>
